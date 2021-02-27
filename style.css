@@ -1,112 +1,152 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url(https://whenonearth.net/wp-content/uploads/Frozen-Forests-of-Finland.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    width: 100vw;
-    height: 100vh;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
-  /* What kind of selector is this? */
-  /*class selector*/
-  .logo {
-    width: 150px;
-    height: 100px;
-    margin: 3% 10%;
-  }
-  
-  header {
-    display: grid;
-    grid-template-columns: 15% 85%;
-    width: 100%;
-    margin: auto;
-    background-color: rgba(68, 58, 58, 0.486);
-  }
-  
-  main {
-    height: auto;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 30% 40% 30%;
-  }
-  
-  /* This is an element within an element selector */
-  nav > a {
-    margin: auto;
-    height: 10%;
-    width: 15%;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    border-radius: 25px;
-    background: rgb(131, 104, 252);
-    padding: 20px;
-    text-align: center;
-    border: 2px solid black;
-  }
-  
-  .has-border {
-    border-radius: 25px;
-    border: 2px solid #0795c3;
-    background: rgb(255, 163, 163);
-    padding: 20px;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    padding-right: 2%;
-  }
-  /* This is an ID selector */
-  #profile-pic {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    margin: 15% auto;
-    grid-column: 2/3;
-  }
-  
-  h1 {
-    color: rgb(0, 0, 0);
-    grid-column: 2/3;
-    margin: 3% auto;
-    border-bottom: 2px solid #1940a9;
-    background-color: rgba(0, 0, 0, 0.096);
-  }
-  
-  h2 {
-    grid-column: 2/3;
-    margin: 3% auto;
-    font-style: italic;
-  }
-  
-  .small-text {
-    grid-column: 2/3;
-    color: black;
-    font-size: 10px;
-    margin: 3% auto;
-  }
-  
-  button {
-    grid-column: 2/3;
-    margin: 3% auto;
-    width: 70%;
-    height: 15%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    border-radius: 25px;
-    background: black;
-    padding: 20px;
-    padding-bottom: 5%;
-    text-align: center;
-    color: white;
-    letter-spacing: 16px;
-    font-style: italic;
-  }
-  
+.mainpage {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(https://whenonearth.net/wp-content/uploads/Frozen-Forests-of-Finland.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/* What kind of selector is this? */
+/*class selector*/
+.logo {
+  width: 150px;
+  height: 100px;
+  margin: 3% 10%;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  width: 100%;
+  margin: auto;
+  background-color: rgba(68, 58, 58, 0.486);
+}
+
+main {
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+}
+
+/* This is an element within an element selector */
+nav > a {
+  margin: auto;
+  height: 10%;
+  width: 15%;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  border-radius: 25px;
+  background: rgb(131, 104, 252);
+  padding: 20px;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.has-border {
+  border-radius: 25px;
+  border: 2px solid #0795c3;
+  background: rgb(255, 163, 163);
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+/* This is an ID selector */
+#profile-pic {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin: 15% auto;
+  grid-column: 2/3;
+}
+
+.nameplate {
+  color: rgb(0, 0, 0);
+  grid-column: 2/3;
+  margin: 3% auto;
+  border-bottom: 2px solid #1940a9;
+  background-color: rgba(0, 0, 0, 0.096);
+}
+
+h2 {
+  grid-column: 2/3;
+  margin: 3% auto;
+  font-style: italic;
+}
+
+.small-text {
+  grid-column: 2/3;
+  color: black;
+  font-size: 10px;
+  margin: 3% auto;
+}
+
+button {
+  grid-column: 2/3;
+  margin: 3% auto;
+  width: 70%;
+  height: 15%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  border-radius: 25px;
+  background: black;
+  padding: 20px;
+  padding-bottom: 5%;
+  text-align: center;
+  color: white;
+  letter-spacing: 16px;
+  font-style: italic;
+}
+
+.portfolio {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(https://cdn.pixabay.com/photo/2021/01/24/20/21/cloud-5946381_960_720.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.portmain {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.pagemain {
+  width: 1000px;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.startport {
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+.linktitles {
+  font-size: x-large;
+  font-weight: bolder;
+  list-style-type: none;
+  text-align: center;
+}
