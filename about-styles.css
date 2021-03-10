@@ -1,0 +1,29 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.big-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  background-image: url(./citynetworkimage.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  font-family: "DotGothic16", sans-serif;
+}
+
+article {
+  width: 50%;
+}
+
+img {
+  max-width: 100%;
+}
