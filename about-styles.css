@@ -1,29 +1,51 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
+  border: 2px solid red;
 }
 
 .big-container {
   width: 100%;
   height: auto;
-  display: flex;
-  flex-flow: column wrap;
-  align-content: center;
-  background-image: url(./citynetworkimage.jpg);
-  background-position: center;
-  background-size: cover;
   color: white;
+  background-image: url(./citynetworkimage.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+header {
+  width: 100%;
+  padding: 10px;
+}
+
+a {
+  font-size: 2em;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  background-color: olivedrab;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+a:hover {
+  background-color: olive;
+  color: maroon;
 }
 
 h1 {
   text-align: center;
-  font-family: "DotGothic16", sans-serif;
 }
 
 article {
-  width: 50%;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
 }
