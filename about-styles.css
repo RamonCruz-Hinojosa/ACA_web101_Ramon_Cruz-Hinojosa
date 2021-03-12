@@ -2,18 +2,27 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  border: 2px solid red;
+  /* border: 2px solid red; */
+}
+
+body {
+  background-image: url(./citynetworkimage.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .big-container {
   width: 100%;
   height: auto;
-  color: white;
-  background-image: url(./citynetworkimage.jpg);
-  background-size: cover;
-  background-position: center;
+  color: lightslategray;
   display: flex;
+  align-items: center;
   flex-flow: column nowrap;
+}
+
+.big-container-wrapper {
+  width: 50%;
+  height: auto;
 }
 
 header {
@@ -42,10 +51,18 @@ h1 {
 
 article {
   width: 100%;
+  background-color: black;
   display: flex;
+  line-height: 25px;
   flex-flow: column nowrap;
+  font-size: 1.5em;
 }
 
 img {
   width: 100%;
+}
+
+p {
+  margin-bottom: 15px;
+  padding: 10px;
 }
