@@ -66,3 +66,16 @@ p {
   margin-bottom: 15px;
   padding: 10px;
 }
+
+@media (max-width: 768px) {
+  .big-container-wrapper {
+    width: 70%;
+    height: auto;
+  }
+}
+
+@media (max-width: 425px) {
+  p {
+    font-size: 18px;
+  }
+}
