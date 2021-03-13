@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact page</title>
+    <link rel="stylesheet" href="./forms.css">
+</head>
+<body>
+    <div class="formbox">
+        <div class="formbox-wrapper">
+            <form action="./result.html">
+                <div class="email">
+                    <label for="Email">E-mail</label>
+                    <input type="Email" name="Email" id="Email">
+                </div>
+                <div class="textbox">
+                    <textarea name="comments" id="comments" cols="40" rows="20" minlength="20" maxlength="500"></textarea>
+                </div>
+                <div class="hear">How did you hear about me?
+                    <label for="classmate">Classmate</label>
+                    <input type="checkbox" id="classmate" name="classmate" value="classmate">
+                    <label for="Resume">Resume Submission</label>
+                    <input type="checkbox" id="resume" name="resume" value="resume">
+                    <label for="LinkedIn">LinkedIn</label>
+                    <input type="checkbox" id="linkedin" name="linkedin" value="LinkedIn">
+                    <label for="Coding-Academy">Coding Academy Rec</label>
+                    <input type="checkbox" id="Coding-Academy" name="Coding-Academy" value="Coding-Academy">
+                </div>
+                <div class="contact">Would you like to be contacted back?
+                    <label for="Yes">Yes</label>
+                    <input type="radio" id="Yes" name="contact" value="Yes">
+                    <label for="No">No</label>
+                    <input type="radio" id="No" name="contact" value="No">
+                </div>
+                <div class="date">Put Birthdate here!
+                    <label for="date"></label>
+                    <input type="date" id="date" name="date">
+                </div>
+                <div class="submit">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
