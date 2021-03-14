@@ -7,17 +7,22 @@
     <link rel="stylesheet" href="./forms.css">
 </head>
 <body>
+    <header>
+        <img src="./myProfilePic.jpg" alt="Profilepicture">
+        <h1>Contact page</h1>
+    </header>
     <div class="formbox">
-        <div class="formbox-wrapper">
             <form action="./result.html">
                 <div class="email">
-                    <label for="Email">E-mail</label>
+                    <label for="Email">E-mail:</label>
                     <input type="Email" name="Email" id="Email">
                 </div>
+                <h2>Comments Here</h2>
                 <div class="textbox">
-                    <textarea name="comments" id="comments" cols="40" rows="20" minlength="20" maxlength="500"></textarea>
+                    <textarea name="comments" id="comments" cols="50" rows="10" minlength="20" maxlength="500"></textarea>
                 </div>
-                <div class="hear">How did you hear about me?
+                <h2>How did you hear about me?</h2>
+                <div class="hear">
                     <label for="classmate">Classmate</label>
                     <input type="checkbox" id="classmate" name="classmate" value="classmate">
                     <label for="Resume">Resume Submission</label>
@@ -27,13 +32,19 @@
                     <label for="Coding-Academy">Coding Academy Rec</label>
                     <input type="checkbox" id="Coding-Academy" name="Coding-Academy" value="Coding-Academy">
                 </div>
-                <div class="contact">Would you like to be contacted back?
-                    <label for="Yes">Yes</label>
-                    <input type="radio" id="Yes" name="contact" value="Yes">
-                    <label for="No">No</label>
-                    <input type="radio" id="No" name="contact" value="No">
+                <h2>Would you like to be contacted back?</h2>
+                <div class="contact">
+                    <div class="yes">
+                        <label for="Yes">Yes</label>
+                        <input type="radio" id="Yes" name="contact" value="Yes">
+                    </div>
+                    <div class="no">
+                        <label for="No">No</label>
+                        <input type="radio" id="No" name="contact" value="No">
+                    </div>
                 </div>
-                <div class="date">Put Birthdate here!
+                <h2>Put Birthdate here!</h2>
+                <div class="date">
                     <label for="date"></label>
                     <input type="date" id="date" name="date">
                 </div>
@@ -41,7 +52,6 @@
                     <button type="submit">Submit</button>
                 </div>
             </form>
-        </div>
     </div>
 </body>
 </html>

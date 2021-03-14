@@ -10,18 +10,94 @@ body {
 
 .formbox {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  flex-flow: column nowrap;
+  align-items: center;
 }
 
-.formbox-wrapper {
-  width: 50%;
+header {
+  width: 100%;
+  height: 20vh;
+  border: 2px solid black;
+  background-color: cornflowerblue;
+}
+
+img {
+  max-width: 250px;
   height: auto;
+  display: inline-block;
+}
+
+h1 {
+  width: 75%;
+  height: auto;
+  text-align: center;
+  font-size: 80px;
+  display: inline-block;
 }
 
 form {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.email {
+  width: 100%;
+  font-size: 2em;
+  text-align: center;
+}
+
+.email > label {
+  width: 25%;
+  height: auto;
+}
+
+.email > input {
+  width: 75%;
+  height: 30px;
+  padding: 10px;
+}
+
+.textbox {
+  font-size: 3em;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.textbox > textarea {
+  font-size: 20px;
+}
+
+.hear {
   display: grid;
-  grid-template: repeat(5 1fr) / 1fr;
+  grid-template: 1fr 1fr / 1fr 1fr;
+}
+
+.hear > label {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.hear > input {
+  justify-self: center;
+}
+
+.contact {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.yes,
+.no {
+  display: inline-block;
+}
+
+.submit {
+  text-align: center;
 }
