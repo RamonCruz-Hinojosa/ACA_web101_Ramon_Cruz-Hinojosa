@@ -65,6 +65,7 @@ img {
 
 .container-overlay {
   position: relative;
+  width: 100%;
 }
 
 .overlay {
@@ -80,7 +81,7 @@ img {
   background-color: cadetblue;
 }
 
-img:hover .overlay {
+.container-overlay:hover .overlay {
   opacity: 1;
 }
 
@@ -92,6 +93,23 @@ img:hover .overlay {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.container-animation:hover {
+  width: 100%;
+  animation-name: spin;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
 }
 
 @media screen and (min-width: 600px) {
@@ -113,7 +131,7 @@ img:hover .overlay {
   }
 
   .image-holder {
-    width: 100%;
+    width: 50%;
     height: auto;
     background-color: #272d34;
     background-size: contain;
