@@ -1,0 +1,75 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Resume page</title>
+        <link rel="stylesheet" href="./resume-styles.css">
+    </head>
+    <body>
+        <div class="big-grid">
+            <header>
+                <div class="headerleft">
+                    <!-- dog image spins -->
+                    <img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/slideshows/dog_breed_health_issues_slideshow/1800x1200_dog_breed_health_issues_slideshow.jpg" alt="dog pic" id="spindog">
+                    <!-- dog image spins -->
+                    <h2>Professional Dog</h2>
+                </div>
+                <div class="headercenter">
+                    <h1 onclick="fadeaway(this)">Mr <br> Dog</h1>
+                    <hr>
+                    <p id="headerp">I'm a software engineer with over two decades of experience 
+                        working in the tech industry, providing valuable expertise 
+                        to start-up businesses.
+                    </p>
+                </div>
+            </header>
+            <aside>
+                <h3>Contact <br> Info</h3>
+                <ol id="cont">
+                    <!-- bad toggle animation -->
+                    <li><img src="./phone img.png" alt="phone image" onclick='growimage(this)' class="growimg"></li>
+                    <li>123-456-7890</li>
+                    <li><img src="./locationimag.png" alt="location marker image" onclick='growimage(this)' class="growimg"></li>
+                    <li>123 Anywhere Street, Any City, State, Country</li>
+                    <li><img src="./emailimage.png" alt="email icon" onclick='growimage(this)' class="growimg"></li>
+                    <li>helloreallygreatsite.com www.reallygreatsite.com</li>
+                    <li><img src="./linkedinimage.png" alt="linkedin icon" onclick='growimage(this)' class="growimg" ></li>
+                    <li>LinkedIn: @reallygoodsite</li>
+                    <!-- bad toggle animation -->
+                </ol>
+            </aside>
+            <main> 
+                <div>
+                    <h3>Areas of Expertise</h3>
+                    <p>I've worked with various types of projects and
+                        have mastered multiple programming languages and
+                        coding as well as software testing and debugging.
+                    </p>
+                    <h3>Professional History</h3>
+                    <p class="littlebig">Lead Software Engineer</p>
+                    <ul class="mainul">Aniciplus Tech | May 2020 - Present
+                        <li>Manages company largest team of software engineers</li>
+                        <li>Ensures major projects follow established timeline</li>
+                        <li>Communicates team needs to other departments</li>
+                    </ul>
+                    <p class="littlebig">Senior Software Engineer</p>
+                    <ul class="mainul">Holvest Strategies | May 2015 - March 2020
+                        <li>Developed and designed information systems for clients</li>
+                        <li>Assisted team with various aspects of projects</li>
+                        <li>Managed team when team lead was unavailable</li>
+                    </ul>
+                    <h3>Educational History</h3>
+                    <p class="littlebig">Commasbell University</p>
+                    <ul class="mainul">MS Software Engineering, class of 2008
+                        <li>Graduated with honors</li>
+                        <li>Graduate TA for Advanced Programming</li>
+                        <li>Worked as Head Student Supervisor at Commasbell 
+                            University Tech Support Office</li>
+                    </ul>
+                </div>
+            </main>
+        </div>
+        <script src="./resume-interactive.js"></script>
+    </body>
+</html>
